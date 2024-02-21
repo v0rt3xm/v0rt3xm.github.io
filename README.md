@@ -1,3 +1,3 @@
 # V0RT3XM
 
-Welcome to my personal website.
+Welcome to my personal blog.
