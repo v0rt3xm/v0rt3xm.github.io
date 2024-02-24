@@ -8,22 +8,38 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <style>
-header {
-    text-align: center;
+* {
+  box-sizing: border-box;
 }
+
+/* Style the header */
+header {
+  text-align: center;
+}
+
 nav {
   float: left;
 }
+
 article {
   float: left;
 }
+
 section::after {
   content: "";
   display: table;
   clear: both;
 }
+
 footer {
-    text-align: center;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
 <body>
