@@ -14,20 +14,44 @@
 
 /* Style the header */
 header {
+  padding: 30px;
   text-align: center;
+  font-size: 35px;
 }
 
+/* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  padding: 20px;
 }
 
 article {
   float: left;
+  padding: 20px;
   width: 70%;
+  height: 300px; /* only for demonstration, should be removed */
 }
-    
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
 footer {
+  padding: 10px;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
 <body>
